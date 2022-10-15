@@ -1,0 +1,41 @@
+:root {
+  /* color */
+  --color-white: #f5f7f7;
+  --color-yellow: #edb518;
+  --color-red: #990001;
+  --color-black: #000407;
+  /* font */
+}
+
+.home__slide {
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+}
+
+.home__slide__album {
+  width: 300vw;
+  transition: transform 800ms;
+}
+
+.images {
+  width: 100vw;
+  float: left;
+}
+
+.images img {
+  width: 100%;
+}
+
+.btn {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 500ms;
+}
+
+.btn:hover {
+  background-color: var(--color-yellow);
+}

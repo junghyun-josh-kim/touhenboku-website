@@ -72,32 +72,3 @@ header {
   display: flex;
   text-align: center;
 }
-
-/* slides */
-.home__slide {
-  overflow: hidden;
-  justify-content: center;
-  text-align: center;
-}
-
-.home__slide__album {
-  width: 300vw;
-  transition: transform 0.7s ease-in;
-}
-
-.images {
-  width: 100vw;
-  float: left;
-}
-
-.images img {
-  width: 100%;
-}
-
-.btn {
-  margin: 10px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: white;
-}
