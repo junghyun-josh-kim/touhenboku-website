@@ -15,6 +15,7 @@ body {
 
 header {
   width: 100vw;
+  height: 170px;
   display: flex;
   background-color: #990001;
 }
@@ -22,6 +23,21 @@ header {
 .company-title {
   display: flex;
   color: var(--color-white);
+}
+
+.company-title__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.company-title__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 10px;
 }
 
 .nav-bar {
