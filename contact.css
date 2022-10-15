@@ -1,0 +1,16 @@
+.contact {
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  background-color: blueviolet;
+}
+
+.contact__logo {
+  width: 50%;
+  height: 100%;
+}
+
+.contact__email {
+  width: 50%;
+  height: 100%;
+}
