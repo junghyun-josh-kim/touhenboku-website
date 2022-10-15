@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="footer.css" />
     <script defer src="home.js"></script>
+    <script defer src="tomo.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4298a2e756.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -66,7 +71,20 @@
       </section>
       <button>MENU BUTTON</button>
       <section class="tomo">
-        <div>Find TOMO</div>
+        <div class="tomo__game-header">
+          <button class="tomo__game-header__button">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <span class="tomo__game-header__timer">00:00</span>
+          <span class="tomo__game-header__score">3</span>
+        </div>
+        <div class="tomo__game-field"></div>
+        <div class="tomo__pop-up tomo__pop-up--hide">
+          <button class="tomo__pop-up__refresh">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          <span class="tomo__pop-up__message">HELLO</span>
+        </div>
         <!-- Find Tomo mini game> -->
         <!-- 1 column -->
       </section>
