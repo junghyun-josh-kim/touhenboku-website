@@ -1,0 +1,43 @@
+:root {
+  /* color */
+  --color-white: #f5f7f7;
+  --color-yellow: #edb518;
+  --color-red: #990001;
+  --color-black: #000407;
+  /* font */
+}
+
+body {
+  background-color: var(--color-black);
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  background-color: #990001;
+}
+
+.company-title {
+  display: flex;
+  color: var(--color-white);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  color: var(--color-white);
+}
+
+.nav-bar__row {
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-bar__online-order {
+  background-color: #edb518;
+  border-radius: 10px;
+  font-weight: 600;
+}
