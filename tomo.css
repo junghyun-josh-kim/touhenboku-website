@@ -53,6 +53,8 @@ button {
   font-size: 32px;
   margin-top: 8px;
   visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 .tomo__game-header__score {
   text-align: center;
@@ -65,6 +67,8 @@ button {
   background-color: darksalmon;
   color: white;
   visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
 .tomo__game-field {
@@ -103,4 +107,12 @@ button {
 .tomo__pop-up__message {
   display: block;
   font-size: 30px;
+}
+
+.tomo-tomo {
+  transition: transform 200ms ease-in;
+}
+
+.tomo-tomo:hover {
+  transform: scale(1.2);
 }

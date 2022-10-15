@@ -29,3 +29,7 @@
   height: 100%;
   background-color: #1c9696;
 }
+
+.menu__button {
+  margin-bottom: 40px;
+}
