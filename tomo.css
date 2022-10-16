@@ -70,21 +70,61 @@ p {
   margin: 4px 0;
 }
 
+/* TOMO Title*/
+
 .tomo-title {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .tomo-title h3 {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
   color: var(--color-white);
 }
+
+.tomo-title img {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  width: 80px;
+  transition: 300ms ease-in-out;
+}
+
+.tomo-title img:hover {
+  animation-name: shaking;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+  scale: 1.2;
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(8deg);
+  }
+
+  75% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Tomo Game */
 
 .tomo {
   display: flex;

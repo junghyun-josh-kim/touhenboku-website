@@ -92,8 +92,8 @@ p {
 .menu__title button {
   font-size: var(--weight-regular);
   font-weight: var(--weight-bold);
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
   margin-top: 5px;
   transition: 300ms ease-in-out;
   cursor: pointer;
