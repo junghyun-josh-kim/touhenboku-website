@@ -32,6 +32,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   cursor: default;
+  background-color: var(--color-black);
 }
 
 a {
@@ -94,10 +95,15 @@ p {
   margin-right: 30px;
 }
 
+#navbar__logo__hide {
+  display: none;
+}
+
 .navbar__menu__item {
   padding: 8px 12px;
-  margin: 0 4px;
+  margin: 0 20px;
   cursor: pointer;
+  font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   border-radius: var(--size-border-radius);
 }
@@ -108,4 +114,52 @@ p {
 
 .navbar__menu__item.active {
   background-color: var(--color-yellow);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 60px;
+  right: 32px;
+  font-size: var(--font-large);
+  color: var(--color-red);
+  border-radius: var(--size-border-radius);
+  display: none;
+}
+
+/* For below 768px screen with */
+@media screen and (max-width: 1028px) {
+  .navbar__menu__item {
+    display: none;
+  }
+  .navbar__toggle-btn {
+    display: block;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar__menu__item.hide {
+    display: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .navbar__logo a {
+      display: none;
+    }
+    #navbar__logo__hide {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar__logo__hide {
+    display: none;
+  }
 }

@@ -1,9 +1,3 @@
-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .tomo {
   display: flex;
   flex-direction: column;
@@ -103,4 +97,10 @@ button {
 
 .tomo-tomo:hover {
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+  .tomo {
+    display: none;
+  }
 }
