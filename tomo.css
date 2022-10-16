@@ -1,7 +1,95 @@
+/* Global */
+:root {
+  /* color */
+  --color-red: #990001;
+  --color-yellow: #edb518;
+  --color-grey: rgb(58, 58, 58);
+  --color-black: #000407;
+  --color-white: #f5f7f7;
+
+  /* Font Size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font Weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 8px;
+}
+
+/* Universal Tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  cursor: default;
+  background-color: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+
+.tomo-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.tomo-title h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+}
+
 .tomo {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 20px auto;
   background: url(img/tomo-bg.png) center/cover;
   width: 800px;
   height: 500px;
@@ -99,7 +187,7 @@
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .tomo {
     display: none;
   }

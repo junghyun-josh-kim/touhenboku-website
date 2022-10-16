@@ -91,6 +91,10 @@ p {
   font-weight: var(--weight-bold);
 }
 
+.navbar__logo a {
+  text-align: center;
+}
+
 .navbar__logo img {
   margin-right: 30px;
 }
@@ -106,6 +110,8 @@ p {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   border-radius: var(--size-border-radius);
+  transition: 300ms ease-in;
+  text-align: center;
 }
 
 .navbar__menu__item:hover {
@@ -113,7 +119,14 @@ p {
 }
 
 .navbar__menu__item.active {
-  background-color: var(--color-yellow);
+  font-size: 22px;
+  font-weight: var(--weight-bold);
+  color: var(--color-yellow);
+}
+
+.navbar__menu__item.active:hover {
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
 }
 
 .navbar__toggle-btn {
@@ -128,12 +141,6 @@ p {
 
 /* For below 768px screen with */
 @media screen and (max-width: 1028px) {
-  .navbar__menu__item {
-    display: none;
-  }
-  .navbar__toggle-btn {
-    display: block;
-  }
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -143,13 +150,27 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+    margin-top: 20px;
+  }
+  .navbar__menu__item {
+    display: block;
   }
   .navbar__menu__item.hide {
-    display: none;
+    display: block;
+  }
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   @media screen and (max-width: 800px) {
     .navbar__logo a {
+      display: none;
+    }
+    .navbar__menu__item.hide {
       display: none;
     }
     #navbar__logo__hide {

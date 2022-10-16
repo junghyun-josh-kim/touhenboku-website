@@ -1,3 +1,7 @@
+.home {
+  margin-bottom: 100px;
+}
+
 .home__slide {
   overflow: hidden;
   justify-content: center;
@@ -16,7 +20,6 @@
 
 .images img {
   width: 100%;
-  padding: 2%;
 }
 
 .btn {

@@ -1,17 +1,19 @@
 .contact {
-  margin-top: 40px;
   display: flex;
-  width: 100vw;
+  width: 80vw;
   height: 30vh;
-  background-color: blueviolet;
+  margin: 10px auto;
+  border-radius: 20px;
+  background-color: yellow;
 }
 
 .contact__logo {
   width: 50%;
-  height: 100%;
+  display: flex;
+  margin: 0;
 }
 
-.contact__email {
+.contact__customer-area {
   width: 50%;
   height: 100%;
 }
