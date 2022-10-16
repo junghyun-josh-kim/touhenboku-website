@@ -1,15 +1,3 @@
-:root {
-  /* color */
-  --color-white: #f5f7f7;
-  --color-yellow: #edb518;
-  --color-red: #990001;
-  --color-black: #000407;
-  /* font */
-}
-body {
-  text-align: center;
-  margin: auto;
-}
 button {
   border: none;
   outline: none;
