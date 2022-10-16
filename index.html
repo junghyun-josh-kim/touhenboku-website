@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="decription" content="Authentic japanese ramen at Eglinton" />
+    <meta name="description" content="Authentic japanese ramen at Eglinton" />
     <meta name="author" content="Josh Kim" />
     <link rel="icon" type="image/png" href="img/logo.png" />
     <title>Touhenboku Eglinton</title>
@@ -28,79 +28,70 @@
     />
   </head>
   <body>
-    <header>
-      <section class="company-title">
-        <div class="company-title__logo">
-          <img src="/img/logo.png" alt="Touhenboku Ramen Logo" />
-        </div>
-        <div class="company-title__title">
-          <h1>Touhenboku Eglinton</h1>
-        </div>
-      </section>
-      <section class="nav-bar">
-        <div class="nav-bar__row nav-bar__online-order">ONLINE ORDERING</div>
-        <!-- /UEAT API -->
-        <div class="nav-bar__row nav-bar__menu">MENU</div>
-        <!-- /menu.html -->
-        <div class="nav-bar__row nav-bar__tomo">"TOMO"</div>
-        <!-- Find Tomo mini game -> 10% coupon -->
-        <div class="nav-bar__row nav-bar__contact">CONTACT</div>
-        <!-- /Sending email API , contact-->
-      </section>
-    </header>
-    <main>
-      <section class="home">
-        <div class="home__slide">
-          <div class="home__slide__album">
-            <div class="images">
-              <img class="slide" src="img/img01.png" />
-            </div>
-            <div class="images">
-              <img class="slide" src="img/img02.png" />
-            </div>
-            <div class="images">
-              <img class="slide" src="img/img03.png" />
-            </div>
+    <!-- navbar -->
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <p>paragraph</p>
+    <section class="navbar">
+      <div class="navbar__logo">
+        <img src="/img/logo.png" alt="Touhenboku Ramen Logo" />
+        <a href="#">Touhenboku Eglinton</a>
+      </div>
+      <div class="navbar__menu">
+        <div class="navbar__menu">ONLINE ORDERING</div>
+        <div class="navbar__menu">MENU</div>
+        <div class="navbar__menu">TOMO</div>
+        <div class="navbar__menu">CONTACT</div>
+      </div>
+    </section>
+    <section class="home">
+      <div class="home__slide">
+        <div class="home__slide__album">
+          <div class="images">
+            <img class="slide" src="img/img01.png" />
           </div>
-          <button class="btn btn1"></button>
-          <button class="btn btn2"></button>
-          <button class="btn btn3"></button>
+          <div class="images">
+            <img class="slide" src="img/img02.png" />
+          </div>
+          <div class="images">
+            <img class="slide" src="img/img03.png" />
+          </div>
         </div>
-      </section>
-      <div class="menu-title">signature menu</div>
-      <section class="menu">
-        <div class="menu__column-left">Black Garlic Ramen</div>
-        <div class="menu__column-right">Karaage Don</div>
-      </section>
-      <button class="menu__button">MENU BUTTON</button>
-      <section class="tomo">
-        <div class="tomo__game-header">
-          <button class="tomo__game-header__button">
-            <i class="fa-solid fa-play clone"></i>
-          </button>
-          <span class="tomo__game-header__timer">00:00</span>
-          <span class="tomo__game-header__score">3</span>
-        </div>
-        <div class="tomo__game-field"></div>
-        <div class="tomo__pop-up tomo__pop-up--hide">
-          <button class="tomo__pop-up__refresh">
-            <i class="fa-solid fa-rotate-right"></i>
-          </button>
-          <span class="tomo__pop-up__message">HELLO</span>
-        </div>
-        <!-- Find Tomo mini game> -->
-        <!-- 1 column -->
-      </section>
-      <section class="contact">
-        <div class="contact__logo">CONTACT LEFT</div>
-        <div class="contact__email">CONTACT RIGHT</div>
-      </section>
-    </main>
-    <footer>
-      <section class="info">
-        <div class="info__map">GOOGLE MAP API</div>
-        <div class="info__right">ADDRESS</div>
-      </section>
-    </footer>
+        <button class="btn btn1"></button>
+        <button class="btn btn2"></button>
+        <button class="btn btn3"></button>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="menu__column-left">Black Garlic Ramen</div>
+      <div class="menu__column-right">Karaage Don</div>
+    </section>
+    <section class="tomo">
+      <div class="tomo__game-header">
+        <button class="tomo__game-header__button">
+          <i class="fa-solid fa-play clone"></i>
+        </button>
+        <span class="tomo__game-header__timer">00:00</span>
+        <span class="tomo__game-header__score">3</span>
+      </div>
+      <div class="tomo__game-field"></div>
+      <div class="tomo__pop-up tomo__pop-up--hide">
+        <button class="tomo__pop-up__refresh">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+        <span class="tomo__pop-up__message">HELLO</span>
+      </div>
+      <!-- Find Tomo mini game> -->
+      <!-- 1 column -->
+    </section>
+    <section class="contact">
+      <div class="contact__logo">CONTACT LEFT</div>
+      <div class="contact__email">CONTACT RIGHT</div>
+    </section>
+    <section class="info">
+      <div class="info__map">GOOGLE MAP API</div>
+      <div class="info__right">ADDRESS</div>
+    </section>
   </body>
 </html>
