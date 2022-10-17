@@ -12,6 +12,7 @@ const gameScore = document.querySelector('.tomo__game-header__score');
 const popUp = document.querySelector('.tomo__pop-up');
 const popUpText = document.querySelector('.tomo__pop-up__message');
 const popUpRefresh = document.querySelector('.tomo__pop-up__refresh');
+const soundOnOffBtn = document.querySelector('.tomo__sound');
 
 const tomoSound = new Audio('./sound/tomo-click.mp3');
 const winSound = new Audio('./sound/game-win.mp3');
@@ -21,6 +22,20 @@ const alertSound = new Audio('./sound/alert.wav');
 let started = false;
 let score = 0;
 let timer = undefined;
+let soundState = true;
+
+soundOnOffBtn.addEventListener('click', soundOnOff);
+
+function soundOnOff() {
+  if (soundState) {
+    stopSound(bgSound);
+    soundOnOffBtn.style.visibility = 'hidden';
+  } else {
+    playSound(bgSound);
+    soundOnOffBtn.style.visibility = 'visible';
+  }
+  soundState = true;
+}
 
 field.addEventListener('click', onFieldClick);
 
@@ -44,12 +59,13 @@ function startGame() {
   showTimerAndScore();
   startGameTimer();
   playSound(bgSound);
+  soundOnOffBtn.style.visibility = 'visible';
 }
 function stopGame() {
   started = false;
   stopGameTimer();
   hideGameButton();
-  showPopUpWithText('REPLAY?');
+  showPopUpWithText('Replay for 10% Off?');
   playSound(alertSound);
   stopSound(bgSound);
 }
@@ -64,7 +80,7 @@ function finishGame(win) {
   }
   stopGameTimer();
   stopSound(bgSound);
-  showPopUpWithText(win ? 'Enjoy 10% off!' : 'replay for 10% off?');
+  showPopUpWithText(win ? 'Enjoy 10% Off!' : 'Replay for 10% Off?');
 }
 
 function hideGameButton() {

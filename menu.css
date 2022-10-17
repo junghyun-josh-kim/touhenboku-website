@@ -126,7 +126,7 @@ p {
   height: 100%;
 }
 
-.description {
+.menu__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,12 +141,11 @@ p {
   transition: 300ms ease-in;
 }
 
-.description:hover {
+.menu__description:hover {
   opacity: 0.4;
 }
 
-.description h3,
-p {
+.menu__description h3 {
   color: var(--color-white);
   font-weight: var(--weight-bold);
 }

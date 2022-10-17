@@ -87,6 +87,7 @@ p {
   color: var(--color-white);
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
+  margin-bottom: 40px;
 }
 
 .contact p {
@@ -108,4 +109,12 @@ p {
   transform: scale(1.3);
   background-color: var(--color-yellow);
   color: var(--color-white);
+}
+
+.contact__customer-area img {
+  transition: 600ms ease-in;
+}
+
+.contact__customer-area img:hover {
+  transform: scale(1.2);
 }
