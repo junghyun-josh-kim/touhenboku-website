@@ -24,3 +24,19 @@ const navBarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navBarToggleBtn.addEventListener('click', () => {
   navBarMenu.classList.toggle('open');
 });
+
+// Google Map Style
+function initMap() {
+  const touhenboku = { lat: 43.711431629200284, lng: -79.39910137653287 };
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: touhenboku,
+    mapId: '253b09f4a17c73a2',
+  });
+  const marker = new google.maps.Marker({
+    position: touhenboku,
+    map: map,
+  });
+}
+
+window.initMap = initMap;

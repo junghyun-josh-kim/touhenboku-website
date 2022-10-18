@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="tomo.css" />
     <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="info.css" />
     <script defer src="main.js"></script>
     <script defer src="tomo.js"></script>
     <script
@@ -131,8 +131,21 @@
       </div>
     </section>
     <section class="info">
-      <div class="info__map">GOOGLE MAP API</div>
-      <div class="info__right">ADDRESS</div>
+      <div class="info__title">
+        <h3>Direction</h3>
+        <i class="fa-solid fa-location-dot"></i>
+        <h4>2459 Yonge St, Toronto, ON M4P 2H6</h4>
+        <i class="fa-regular fa-comment"></i>
+        <h4>(416) 551-6800</h4>
+      </div>
+      <div class="info__map-address">
+        <div id="map"></div>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADL0L6bu3z7jV5XXp3eBOKSo722QgpFjw&callback=initMap&v=weekly"
+          defer
+        ></script>
+        <div id="address"></div>
+      </div>
     </section>
   </body>
 </html>
