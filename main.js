@@ -5,16 +5,30 @@ const btn2 = document.querySelector('.btn2');
 const btn3 = document.querySelector('.btn3');
 const container = document.querySelector('.home__slide__album');
 
+yellowBtn1();
+function yellowBtn1() {
+  btn1.style.backgroundColor = '#edb518';
+}
+
 btn1.addEventListener('click', () => {
   container.style.transform = 'translate(0vw)';
+  btn1.style.backgroundColor = '#edb518';
+  btn2.style.backgroundColor = '';
+  btn3.style.backgroundColor = '';
 });
 
 btn2.addEventListener('click', () => {
   container.style.transform = 'translate(-100vw)';
+  btn1.style.backgroundColor = '';
+  btn2.style.backgroundColor = '#edb518';
+  btn3.style.backgroundColor = '';
 });
 
 btn3.addEventListener('click', () => {
   container.style.transform = 'translate(-200vw)';
+  btn1.style.backgroundColor = '';
+  btn2.style.backgroundColor = '';
+  btn3.style.backgroundColor = '#edb518';
 });
 
 // Navbar toggle button for small screen

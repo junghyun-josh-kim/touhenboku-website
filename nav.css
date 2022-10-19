@@ -91,7 +91,7 @@ p {
   font-weight: var(--weight-bold);
 }
 
-.navbar__logo a {
+#navebar__title {
   text-align: center;
 }
 
@@ -110,7 +110,7 @@ p {
   margin: 0 20px;
   cursor: pointer;
   font-size: var(--font-regular);
-  font-weight: var(--weight-semi-bold);
+  font-weight: 900;
   border-radius: var(--size-border-radius);
   transition: 300ms ease-in;
   text-align: center;
@@ -139,6 +139,7 @@ p {
   color: var(--color-red);
   border-radius: var(--size-border-radius);
   display: none;
+  border-style: none;
 }
 
 /* For below 768px screen with */

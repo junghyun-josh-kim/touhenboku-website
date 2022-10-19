@@ -89,8 +89,8 @@ p {
 }
 
 .tomo-title img {
-  margin: 100px 100px 20px 100px;
-  width: 80px;
+  margin: 2.5px;
+  width: 30px;
   transition: 300ms ease-in-out;
 }
 

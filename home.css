@@ -1,5 +1,6 @@
 .home {
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 200px;
 }
 
 .home__slide {
@@ -19,7 +20,7 @@
 }
 
 .images img {
-  width: 100%;
+  width: 90%;
 }
 
 .btn {
