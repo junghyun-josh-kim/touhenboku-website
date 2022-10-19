@@ -35,3 +35,9 @@
   margin-bottom: 50px;
   border-radius: 25px;
 }
+
+@media screen and (max-width: 500px) {
+  #map {
+    height: 30vh;
+  }
+}

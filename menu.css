@@ -154,3 +154,10 @@ p {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 500px) {
+  .menu__columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -256,4 +256,7 @@ p {
   .tomo {
     display: none;
   }
+  .tomo-title {
+    display: none;
+  }
 }
