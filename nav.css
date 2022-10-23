@@ -80,6 +80,10 @@ p {
   padding: 16px;
 }
 
+.navbar.navbar--dark {
+  background-color: transparent;
+}
+
 .navbar__menu {
   display: flex;
 }
